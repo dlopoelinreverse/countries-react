@@ -1,0 +1,20 @@
+.inputs-container {
+    margin: 48px 80px 48px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-bar-container {
+        max-width: 480px;
+        display: flex;
+        span {
+            width: 18px;
+            height: 18px;
+            margin: 19px 430px 19px 32px;
+        }
+        input {
+            margin: 18px 270px 18px 74px;
+        }
+    }
+}
+
