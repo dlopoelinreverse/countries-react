@@ -15,7 +15,7 @@ export default function SearchBar() {
   return (
     <div className={`search-bar-container ${theme}`}>
     <span>loupe</span>
-    <input type="text" onChange={handleSearch}/>
+    <input type="text" placeholder='Search for a country...' onChange={handleSearch}/>
     </div>
   )
 }

@@ -17,7 +17,7 @@ export default function SpecifcCountryData({...props}) {
         <li><span className='bold'>Population : </span>{populationFormater(population)}</li>
         <li><span className='bold'>Region : </span>{region}</li>
         <li><span className='bold'>Sub Region : </span>{subregion}</li>
-        <li><span className='bold'>Capital: </span>{capital[0]}</li>
+        <li><span className='bold'>Capital: </span>{capital ? capital[0] : "capital not defined"}</li>
         <li><span className='bold'>Top Level Domain : </span>{tld[0]}</li>
         <CountryCurrencies countryCurrencies={currencies} />
         <li><span className='bold'>Languages : </span>{Object.values(languages).join(', ')}</li>                

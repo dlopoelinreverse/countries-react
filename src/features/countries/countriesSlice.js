@@ -1,4 +1,4 @@
-import { $CombinedState, createSelector, createSlice } from "@reduxjs/toolkit";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   countries: [],
@@ -14,7 +14,7 @@ export const countriesSlice = createSlice({
   initialState,
   reducers: {
     setCountries: (state, action) => {
-      state.countries = [...action.payload];
+      state.countries = action.payload.sort((a, b) => b.area - a.area);
       state.isLoading = false;
     },
     setCountryNameFilter: (state, action) => {

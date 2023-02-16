@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Nunito Sans';
 }
 
 a, a:visited {
@@ -12,15 +13,40 @@ a, a:visited {
 .app {
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 header {
+    height: 80px;
     width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .header-container {
+        width: 90%;
+        margin: 0px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 23px 81px;
+
+        h1 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        button {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 }
